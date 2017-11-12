@@ -2,7 +2,7 @@ class Evans < Formula
   desc "Evans: more expressive universal gRPC client"
   homepage "https://github.com/ktr0731/evans"
 
-  if CPU.is_64_bit?
+  if Hardware.is_64_bit?
     url "https://github.com/ktr0731/evans/releases/download/0.1.0/evans_darwin_amd64.tar.gz"
     sha256 "27077c846821b9a4cfdb4f3bef575537fd656fe2a026351e141ec0ae44e17ea3"
   else
