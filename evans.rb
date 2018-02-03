@@ -3,11 +3,11 @@ class Evans < Formula
   homepage "https://github.com/ktr0731/evans"
 
   if Hardware::CPU.is_64_bit?
-    url "https://github.com/ktr0731/evans/releases/download/0.2.0/evans_darwin_amd64.tar.gz"
-    sha256 "757a53e09ff85aae7e1c203926eaf3316cb774c99380c6510daec3d2de208ee6"
+    url "https://github.com/ktr0731/evans/releases/download/0.2.1/evans_darwin_amd64.tar.gz"
+    sha256 "f703270b31c9c4cb3b0460e4d88d93ee08789d6e05bf2f75bbadc6f4bf61247f"
   else
-    url "https://github.com/ktr0731/evans/releases/download/0.2.0/evans_darwin_386.tar.gz"
-    sha256 "444448b8c19b13a01d1ab6a6c56e3fe6ac809b2bd877122c4a17c4561ff6ec52"
+    url "https://github.com/ktr0731/evans/releases/download/0.2.1/evans_darwin_386.tar.gz"
+    sha256 "5bef46089b874dcfd745c1812c50155c588ec72c7c5c5af4486f97e1b0be54d8"
   end
 
   def install
