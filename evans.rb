@@ -1,9 +1,9 @@
 class Evans < Formula
   desc "Evans: more expressive universal gRPC client"
   homepage "https://github.com/ktr0731/evans"
-  url "https://github.com/ktr0731/evans/releases/download/0.7.2/evans_darwin_amd64.tar.gz"
-  sha256 "85ee0d7e783af90d089a3f1ac5cda2ac1522b6f46c14281c1c80b08a358ac035"
-  version "0.7.2"
+  url "https://github.com/ktr0731/evans/releases/download/0.7.3/evans_darwin_amd64.tar.gz"
+  sha256 "311ac4088d1dfc1b5d25190e57d77e037415e21838525357c2680f3c95fdbacf"
+  version "0.7.3"
 
   def install
     bin.install "evans"
