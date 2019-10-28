@@ -4,7 +4,7 @@ class Evans < Formula
   homepage "https://evans.syfm.me"
   url "http://github.com/ktr0731/evans/releases/download/0.8.4/evans_darwin_amd64.tar.gz"
   version "0.8.4"
-  sha256 "605f9614113f863a021b71b5684a3962c00dc85e52d497527288c84e55eb29f1"
+  sha256 "a16937b19123924b49e180a21d3e413b550ed2b0dfb7ad05bd0fc01dcc2fa8e8"
 
   def install
     bin.install "evans"
