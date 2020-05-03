@@ -2,9 +2,9 @@
 class Evans < Formula
   desc "Evans: more expressive universal gRPC client"
   homepage "https://evans.syfm.me"
-  url "http://github.com/ktr0731/evans/releases/download/0.8.5/evans_darwin_amd64.tar.gz"
-  version "0.8.5"
-  sha256 "68f28db57274944731388e357bfe4aa82025b5d5fdbd8dc3a149613055f7f94d"
+  url "http://github.com/ktr0731/evans/releases/download/0.9.0/evans_darwin_amd64.tar.gz"
+  version "0.9.0"
+  sha256 "f30af7ddbf9011c3d724cb44252f6ee4b5de685b6b2cca9e59f272428b6dadc4"
 
   def install
     bin.install "evans"
