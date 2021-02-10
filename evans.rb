@@ -5,20 +5,20 @@
 class Evans < Formula
   desc "Evans: more expressive universal gRPC client"
   homepage "https://evans.syfm.me"
-  version "0.9.2"
+  version "0.9.3"
   bottle :unneeded
 
   if OS.mac?
-    url "http://github.com/ktr0731/evans/releases/download/0.9.2/evans_darwin_amd64.tar.gz"
-    sha256 "03e10c81f8b9c99a5a2de05022e646b384239ad54d713e22312229738461a3ce"
+    url "http://github.com/ktr0731/evans/releases/download/0.9.3/evans_darwin_amd64.tar.gz"
+    sha256 "21d17adddf2f7cec1384ae3577a6272a18237835335f9ca6ab489cc659104dec"
   end
   if OS.linux? && Hardware::CPU.intel?
-    url "http://github.com/ktr0731/evans/releases/download/0.9.2/evans_linux_amd64.tar.gz"
-    sha256 "73b47a97ae834fb6d4f3f0878d8f684a45f9dbddcbc7f23b7525f9505cc72cf6"
+    url "http://github.com/ktr0731/evans/releases/download/0.9.3/evans_linux_amd64.tar.gz"
+    sha256 "166404aab42cceee41b15a47f4f94b4d8725d689293743f767eb1bfc98d971d0"
   end
   if OS.linux? && Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-    url "http://github.com/ktr0731/evans/releases/download/0.9.2/evans_linux_arm.tar.gz"
-    sha256 "e390411ae3c5d6c9c58f05286244f1d454c9270746e96907c89e1b05be201092"
+    url "http://github.com/ktr0731/evans/releases/download/0.9.3/evans_linux_arm.tar.gz"
+    sha256 "16d16dd27d05d16597757e89aa34043c0839e78af657ac38f8599b663e43ba46"
   end
 
   def install
