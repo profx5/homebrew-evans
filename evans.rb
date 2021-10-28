@@ -6,7 +6,6 @@ class Evans < Formula
   desc "Evans: more expressive universal gRPC client"
   homepage "https://evans.syfm.me"
   version "0.10.0"
-  bottle :unneeded
 
   if OS.mac?
     url "http://github.com/ktr0731/evans/releases/download/0.10.0/evans_darwin_amd64.tar.gz"
