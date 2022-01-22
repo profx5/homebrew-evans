@@ -5,12 +5,20 @@
 class Evans < Formula
   desc "Evans: more expressive universal gRPC client"
   homepage "https://evans.syfm.me"
-  version "0.10.1"
+  version "0.10.2"
 
   on_macos do
     if Hardware::CPU.intel?
-      url "http://github.com/ktr0731/evans/releases/download/v0.10.1/evans_darwin_amd64.tar.gz"
-      sha256 "5b03cf1d2a2850df32e002618ee7a377e0fe8d09d4ba8650046955da8e40f3e5"
+      url "http://github.com/ktr0731/evans/releases/download/v0.10.2/evans_darwin_amd64.tar.gz"
+      sha256 "f37d5d3f9964593e40d6b6ef6ef2b9349f21e0bc4ef5ff29d2b13ef0e5a1b3e2"
+
+      def install
+        bin.install "evans"
+      end
+    end
+    if Hardware::CPU.arm?
+      url "http://github.com/ktr0731/evans/releases/download/v0.10.2/evans_darwin_arm64.tar.gz"
+      sha256 "2dfe26bdc283c7bf6bbbada2a6c09ea07a9c42e176f570edf0a77b174cda99ad"
 
       def install
         bin.install "evans"
@@ -20,16 +28,24 @@ class Evans < Formula
 
   on_linux do
     if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-      url "http://github.com/ktr0731/evans/releases/download/v0.10.1/evans_linux_arm.tar.gz"
-      sha256 "885d88a4aa84969ae1c071c9ac1046b6bbde263a76bd86b24c42543cdf65a6f4"
+      url "http://github.com/ktr0731/evans/releases/download/v0.10.2/evans_linux_arm.tar.gz"
+      sha256 "eb272d26ec230f5839727757396b93ab1818d9f48baf93ee22c54a9aed2ec632"
+
+      def install
+        bin.install "evans"
+      end
+    end
+    if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
+      url "http://github.com/ktr0731/evans/releases/download/v0.10.2/evans_linux_arm64.tar.gz"
+      sha256 "74e46ad8fcd955cd7fbbc34fe4a65422f324bbdc500e62b328bad18b4d5257fc"
 
       def install
         bin.install "evans"
       end
     end
     if Hardware::CPU.intel?
-      url "http://github.com/ktr0731/evans/releases/download/v0.10.1/evans_linux_amd64.tar.gz"
-      sha256 "f66a6c4a786ddd5e4aa8be21eb76ac4dfff8ee160c2b9c14a8cefebd0d39a9ba"
+      url "http://github.com/ktr0731/evans/releases/download/v0.10.2/evans_linux_amd64.tar.gz"
+      sha256 "12d61282d79ad12e6008f173197b47092981c0e4b2e50526eef33011633ac134"
 
       def install
         bin.install "evans"
