@@ -5,20 +5,20 @@
 class Evans < Formula
   desc "Evans: more expressive universal gRPC client"
   homepage "https://evans.syfm.me"
-  version "0.10.8"
+  version "0.10.7"
 
   on_macos do
     if Hardware::CPU.arm?
-      url "http://github.com/ktr0731/evans/releases/download/v0.10.8/evans_darwin_arm64.tar.gz"
-      sha256 "f2786f4b66886780dda4726bda23844fb8f6fbaf43748a6b07318b0f646bca74"
+      url "http://github.com/ktr0731/evans/releases/download/v0.10.7/evans_darwin_arm64.tar.gz"
+      sha256 "2e0f613b715d516cad3cc201c277a13605e2a5e8a4082d4a701d121764673708"
 
       def install
         bin.install "evans"
       end
     end
     if Hardware::CPU.intel?
-      url "http://github.com/ktr0731/evans/releases/download/v0.10.8/evans_darwin_amd64.tar.gz"
-      sha256 "6175aa647802874dc5b8751f26b6e8ceaffad60fdbbd197623c09c87434debf6"
+      url "http://github.com/ktr0731/evans/releases/download/v0.10.7/evans_darwin_amd64.tar.gz"
+      sha256 "ad308b99104ae26aeb8732cc3bbbe17519adf6533026ca331baf9ff1f9e87e25"
 
       def install
         bin.install "evans"
@@ -28,24 +28,24 @@ class Evans < Formula
 
   on_linux do
     if Hardware::CPU.arm? && !Hardware::CPU.is_64_bit?
-      url "http://github.com/ktr0731/evans/releases/download/v0.10.8/evans_linux_arm.tar.gz"
-      sha256 "cc460eaa4922fcd4441c43f1a4eb2e5fbac0a81e748958a4f818cb4448433f23"
-
-      def install
-        bin.install "evans"
-      end
-    end
-    if Hardware::CPU.intel?
-      url "http://github.com/ktr0731/evans/releases/download/v0.10.8/evans_linux_amd64.tar.gz"
-      sha256 "b68074d9494a047b0c1d6f4eebe31fadcee2f03e8d7b238b37f8c391d63677df"
+      url "http://github.com/ktr0731/evans/releases/download/v0.10.7/evans_linux_arm.tar.gz"
+      sha256 "1accb98522d10ba15218ac7a25a8dcbe26a0ef502adfb3605ae889571d9ba5b5"
 
       def install
         bin.install "evans"
       end
     end
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "http://github.com/ktr0731/evans/releases/download/v0.10.8/evans_linux_arm64.tar.gz"
-      sha256 "5109080797b8c6beb234ee1f845092a1c4f433c6caca3ea0a503b9b138456d6d"
+      url "http://github.com/ktr0731/evans/releases/download/v0.10.7/evans_linux_arm64.tar.gz"
+      sha256 "f63017cc7dd93c2d8d365f54cfd0f704fc4c3c49f953b10651061318e0517b2a"
+
+      def install
+        bin.install "evans"
+      end
+    end
+    if Hardware::CPU.intel?
+      url "http://github.com/ktr0731/evans/releases/download/v0.10.7/evans_linux_amd64.tar.gz"
+      sha256 "ffbc9508baa6af0f3c129d5b5f034c36afbbfc988e4486c8b43e668c793bffb8"
 
       def install
         bin.install "evans"
